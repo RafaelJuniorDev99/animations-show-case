@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Ramadan</a>
+        <ul>
+            <li><a href="#" class="active"> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section id="scene">
+        <h2 id="text">Ramadan Kareem</h2>
+        <img src="./assets/01.png" id="img1">
+        <img src="./assets/02.png" id="img2">
+        <img src="./assets/03.png" id="img3">
+        <img src="./assets/04.png" id="img4">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius minima iste tempore? Laudantium quibusdam ab quo a doloremque minus, optio architecto voluptatibus placeat nulla repellendus neque aut at ad labore veniam ea, voluptates pariatur! Accusantium iure voluptate perspiciatis dolorem fugit quo, labore, officiis exercitationem odit deserunt sequi, tempora maiores aspernatur dolore laborum voluptates inventore hic ea nihil eveniet dolorum minima totam reprehenderit.</br></br> Enim dolorum eius rerum accusamus, culpa rem ea voluptatem quis harum at dolor, quo recusandae repellat dolorem in numquam! Aperiam fuga repellendus blanditiis reiciendis obcaecati voluptas! Delectus perferendis voluptatem atque ratione sed esse! Magni, qui fuga delectus laboriosam dignissimos adipisci facere nemo omnis, aut, aliquid quas! Asperiores, deleniti impedit? Officiis voluptatum sit, asperiores reprehenderit nulla vel dolor ipsum ducimus animi ea tenetur temporibus quos explicabo nesciunt inventore modi incidunt nobis sequi nihil officia id aut consectetur? Ex magnam commodi exercitationem soluta modi quia esse. Facere atque enim nihil quia error nam amet at iure, necessitatibus reprehenderit doloremque tenetur voluptatibus corrupti est maiores sapiente laborum quos aliquam.</br></br> Cum sit, blanditiis quae corrupti et impedit necessitatibus, quasi atque ex hic repellat placeat vel repudiandae laudantium minima doloremque pariatur ab eius iusto, mollitia aliquid error. Obcaecati fugit dolorem animi esse distinctio corporis aut saepe doloribus, voluptatum, voluptas officia dignissimos. Repudiandae suscipit incidunt, tenetur tempore voluptate nemo maiores, amet laboriosam minus laborum doloremque sunt? Expedita error quisquam, consequatur quia ipsam voluptas adipisci ducimus blanditiis aut accusantium rem porro maiores iusto maxime eius! Quia numquam quidem natus, deleniti ex necessitatibus ea obcaecati possimus libero consequuntur beatae aliquid asperiores, aperiam sint deserunt iure! Vel repudiandae rerum quibusdam explicabo eos dolorum consectetur quo aperiam, quaerat iste vitae optio, officiis ea, tempore aliquid doloremque. Aliquid voluptatum eveniet dolore asperiores error eos pariatur ipsam expedita numquam repellat nesciunt qui recusandae, veniam ab laborum ut, possimus molestiae voluptate.</p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let img3 = document.getElementById('img3');
+
+        window.addEventListener('scroll', function(){
+           let value = window.scrollY;
+           text.style.marginTop = value * -1,5+'px';
+           img1.style.top = value * 0.75+'px';
+           img2.style.top = value * 0.5+'px';
+           img3.style.top = value * 0.25+'px';
+        })
+    </script>
+</body>
+</html>
