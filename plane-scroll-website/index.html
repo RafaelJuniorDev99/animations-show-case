@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layer">
+    <img src="./assets/plane.png" class="plane">
+    </div>
+    <section></section>
+    <div class="text">
+<h2>Welcome To <br><span>ThaiLand</span></h2>
+    </div>
+    <section class="sec2"></section>
+    <script>
+    let  layer =document.querySelector('.layer');
+    window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    layer.style.left = value*2+'px';
+    })
+    </script>
+</body>
+</html>
