@@ -1,37 +1,25 @@
- body {
-    background: url(./assets/foto-de-baixo-angulo-do-hipnotizante-ceu-estrelado.jpg);
-  }
-  h1{
-    color: aliceblue;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 200;
-    letter-spacing: 0.25em;
-    line-height: 2.em;
-    background: linear-gradient(68.15deg, #fff 16.62%, #2e2e2e 85.61%);
-  }
+body {
+   background: url(./assets/foto-de-baixo-angulo-do-hipnotizante-ceu-estrelado.jpg);
+   border-top: 0.4px solid #fff;
+}
 
-  a {
-    color: antiquewhite;
-    line-height:2em;
-    }
-    
-  body {
-    border-top: 0.4px solid #fff;
-  }
+h1 {
+   color: aliceblue;
+   text-align: center;
+   font-size: 3em;
+   font-weight: 200;
+   letter-spacing: 0.25em;
+   line-height: 2.em;
+   background: linear-gradient(68.15deg, #fff 16.62%, #2e2e2e 85.61%);
+}
 
- .colum {
-    display: flex;
- }
-
- .day {
-    margin-right: 35px;
- }
-
- .parallax {
-    margin-right: 35px;
- }
- 
- .plane {
-    margin-right: 35px;
- }
+.link {
+   color: antiquewhite;
+   line-height:2em;
+}
+   
+.colum {
+   display: flex;
+   justify-content: center;
+   gap: 35px;
+}
