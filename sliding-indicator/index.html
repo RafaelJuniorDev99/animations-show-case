@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Indicator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <input id="home" type="radio" name="group" checked>
+            <input id="about" type="radio" name="group">
+            <input id="settings" type="radio" name="group">
+            <input id="security" type="radio" name="group">
+            <div class="icon">
+                <label for="home"><ion-icon name="home-outline"></ion-icon></label>
+                <label for="about"><ion-icon name="person-outline"></ion-icon></label>
+                <label for="settings"><ion-icon name="settings-outline"></ion-icon></label>
+                <label for="security"><ion-icon name="lock-closed-outline"></ion-icon></label>
+                <div class="indicator"></div>
+            </div>
+            <div class="content">
+                <div class="contentBx" for="home">
+                 <h2>About</h2>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt repellat error consectetur molestias neque minus iusto corrupti, reprehenderit laborum sunt delectus adipisci eius, quibusdam obcaecati earum dolor quam. Saepe, aliquam.</p>
+                </div>
+                <div class="contentBx" for="about">
+                    <h2>Settings</h2>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt repellat error consectetur molestias neque minus iusto corrupti, reprehenderit laborum sunt delectus adipisci eius, quibusdam obcaecati earum dolor quam. Saepe, aliquam.</p>
+                </div>
+                <div class="contentBx" for="settings">
+                    <h2>Security</h2>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt repellat error consectetur molestias neque minus iusto corrupti, reprehenderit laborum sunt delectus adipisci eius, quibusdam obcaecati earum dolor quam. Saepe, aliquam.</p>
+                </div>
+                <div class="contentBx" for="security">
+                    <h2>Home</h2>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt repellat error consectetur molestias neque minus iusto corrupti, reprehenderit laborum sunt delectus adipisci eius, quibusdam obcaecati earum dolor quam. Saepe, aliquam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
